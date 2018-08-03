@@ -61,6 +61,18 @@ int main()
     {
         printf("%d\n", i);
     }
+    for (int i = 10; i > 0; i--)
+    {
+        printf("%d\n", i);
+    }
+    for (int i = 10; i > 0; i -= 5)
+    {
+        printf("%d\n", i);
+    }
+    for (int i = 0; i < 10; i += 5)
+    {
+        printf("%d\n", i);
+    }
 
     int number;
     int result = 0;
@@ -86,6 +98,20 @@ int main()
     printf("The result of your numbers is : %d\n", result);
     printf("Max %d\n", max);
     printf("Min %d\n", min);
+
+    int i, j, rows;
+
+    printf("Enter number of rows: ");
+    scanf("%d", &rows);
+
+    for (i = 1; i <= rows; i++)
+    {
+        for (j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
 
     return 0;
 }
