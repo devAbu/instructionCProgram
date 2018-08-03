@@ -15,22 +15,22 @@ int main()
     switch (operator)
     {
     case '+':
-        printf("%d + %d = %d", num, num2, num + num2);
+        printf("%d + %d = %d\n", num, num2, num + num2);
         break;
 
     case '-':
-        printf("%d - %d = %d", num, num2, num - num2);
+        printf("%d - %d = %d\n", num, num2, num - num2);
         break;
 
     case '*':
-        printf("%d * %d = %d", num, num2, num * num2);
+        printf("%d * %d = %d\n", num, num2, num * num2);
         break;
 
     case '/':
-        printf("%d / %d = %d", num, num2, num / num2);
+        printf("%d / %d = %d\n", num, num2, num / num2);
         break;
     default:
-        printf("Error! operator is not correct");
+        printf("Error! operator is not correct\n");
     }
 
     char mark = 'A';
@@ -38,23 +38,28 @@ int main()
     switch (mark)
     {
     case 'A':
-        printf("Excellent, your grade is 10");
+        printf("Excellent, your grade is 10\n");
         break;
     case 'B':
-        printf("Perfect, your grade is 9");
+        printf("Perfect, your grade is 9\n");
         break;
     case 'C':
-        printf("Very good, your grade is 8");
+        printf("Very good, your grade is 8\n");
         break;
     case 'D':
-        printf("Good, your grade is 7");
+        printf("Good, your grade is 7\n");
         break;
     case 'E':
-        printf("Not bad, your grade is 6");
+        printf("Not bad, your grade is 6\n");
         break;
     default:
-        printf("Bad, you fail!!!");
+        printf("Bad, you fail!!!\n");
         break;
+    }
+
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d\n", i);
     }
 
     int number;
@@ -78,9 +83,9 @@ int main()
         }
     }
 
-    printf("The result of your numbers is : %d", result);
-    printf("Max %d", max);
-    printf("Min %d", min);
+    printf("The result of your numbers is : %d\n", result);
+    printf("Max %d\n", max);
+    printf("Min %d\n", min);
 
     return 0;
 }
